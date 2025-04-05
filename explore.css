@@ -1,0 +1,142 @@
+.capabilities {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .capabilities-header {
+    margin-bottom: 30px;
+  }
+  
+  .capabilities-header h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .capabilities-header p {
+    color: #777;
+    font-size: 1em;
+  }
+  
+  .capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .capability-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .capability-card:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  .capability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .capability-icon {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .capability-icon i {
+    font-size: 2em;
+  }
+  
+  .capability-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .capability-card p {
+    color: #666;
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+  
+  /* Top border colors */
+  .card-purple { border-top: 5px solid #673ab7; }
+  .card-pink { border-top: 5px solid #e91e63; }
+  .card-cyan { border-top: 5px solid #00bcd4; }
+  .card-green { border-top: 5px solid #4caf50; }
+  .card-orange { border-top: 5px solid #ff9800; }
+  .card-blue { border-top: 5px solid #2196f3; }
+  .card-deep-purple { border-top: 5px solid #9c27b0; }
+  .card-light-blue { border-top: 5px solid #03a9f4; }
+  .card-red { border-top: 5px solid #f44336; }
+  .card-deep-orange { border-top: 5px solid #e64a19; }
+  .card-teal { border-top: 5px solid #009688; }
+  .card-lime { border-top: 5px solid #cddc39; }
+  .card-indigo { border-top: 5px solid #3f51b5; }
+  .card-amber { border-top: 5px solid #ffc107; }
+  .card-brown { border-top: 5px solid #795548; }
+
+  
+  /* Icon Colors */
+  .purple-icon i { color: #673ab7; }
+  .pink-icon i { color: #e91e63; }
+  .cyan-icon i { color: #00bcd4; }
+  .green-icon i { color: #4caf50; }
+  .orange-icon i { color: #ff9800; }
+  .blue-icon i { color: #2196f3; }
+  .deep-purple-icon i { color: #9c27b0; }
+  .light-blue-icon i { color: #03a9f4; }
+  .red-icon i { color: #f44336; }
+  .deep-orange-icon i { color: #e64a19; }
+  .teal-icon i { color: #009688; }
+  .lime-icon i { color: #cddc39; }
+  .indigo-icon i { color: #3f51b5; }
+  .amber-icon i { color: #ffc107; }
+  .brown-icon i { color: #795548; }
+  
+  /* Bottom right circle (More Large and Lighter) */
+  .capability-card::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; /* Adjust for larger size */
+    right: -40px; /* Adjust for larger size */
+    width: 100px; /* Even larger width */
+    height: 100px; /* Even larger height */
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* Even Lighter circle colors based on card color */
+  .card-purple::after { background-color: #ede7f6; } /* Even lighter purple */
+  .card-pink::after { background-color: #fce4ec; } /* Even lighter pink */
+  .card-cyan::after { background-color: #e0f7fa; } /* Even lighter cyan */
+  .card-green::after { background-color: #e8f5e9; } /* Even lighter green */
+  .card-orange::after { background-color: #fff3e0; } /* Even lighter orange */
+  .card-blue::after { background-color: #e3f2fd; } /* Even lighter blue */
+  .card-deep-purple::after { background-color: #f3e5f5; } /* Even lighter deep purple */
+  .card-light-blue::after { background-color: #e1f5fe; } /* Even lighter light blue */
+  .card-red::after { background-color: #ffebee; } /* Even lighter red */
+  .card-deep-orange::after { background-color: #fbe9e7; } /* Even lighter deep orange */
+  .card-teal::after { background-color: #e0f2f1; } /* Even lighter teal */
+  .card-lime::after { background-color: #f9fbe7; } /* Even lighter lime */
+  .card-indigo::after { background-color: #e8eaf6; } /* Even lighter indigo */
+  .card-amber::after { background-color: #fff8e1; } /* Even lighter amber */
+  .card-brown::after { background-color: #efebe9; } /* Even lighter brown */

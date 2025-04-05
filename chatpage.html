@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chatpage.css">
+</head>
+<body>
+
+    <div class="top-left">
+        <div class="custom-select">
+            <div class="selected-option">
+                <span class="ai-name">Gemini</span>
+                <span class="model-version">Gemini 2.0 pro</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <span class="ai-name">Google</span>
+                    <span class="model-version">Gemini 2.0 Flash</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Deepseek</span>
+                    <span class="model-version">DeepSeek: V3</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Deepseek</span>
+                    <span class="model-version">DeepSeek: R1</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Google</span>
+                    <span class="model-version">GPT-4.5</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Google</span>
+                    <span class="model-version">Gemini Pro 2.5</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Meta</span>
+                    <span class="model-version">Meta:Liama</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">XAI</span>
+                    <span class="model-version">Grok-2</span>
+                    <div class="model-image-area"></div>
+                </div>
+                <div class="option">
+                    <span class="ai-name">Prepelexity</span>
+                    <span class="model-version">Sonar</span>
+                    <div class="model-image-area"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="top-right">
+    <a href="upgrade.html" class="advanced-button">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Try Advanced models
+    </a>
+</div>
+
+    <div class="header-container">
+        <h1>What can I help with?</h1>
+    </div>
+
+    <div class="conversation-container">
+        <div class="conversation" id="conversation">
+            </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="input-area">
+            <button class="plus-button" id="plusBtn">
+                <i class="fa-solid fa-plus"></i>
+                <input type="file" id="fileInput" style="display: none;">
+            </button>
+            <input type="text" placeholder="Type here" id="messageInput">
+            <div class="right-buttons">
+                <button class="search-button" id="sendButton">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i> Search
+                </button>
+                <button class="reason-button">
+                    <i class="fa-regular fa-lightbulb lightbulb-icon"></i> Think
+                </button>
+                <button class="mic-button">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                <button class="upload-button">
+                    <i class="fa-solid fa-arrow-up upload-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="chatpage.js"></script>
+</body>
+</html>

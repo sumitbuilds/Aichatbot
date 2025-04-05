@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Using Roboto font like initial examples */
+
+:root {
+    /* Light Theme Colors */
+    --primary-button-bg: #343a40; /* Dark grey button background */
+    --primary-button-hover-bg: #212529; /* Darker button hover */
+    --primary-button-text: #ffffff;   /* White button text */
+    --card-bg: #ffffff;             /* White card background */
+    --body-bg: #f8f9fa;             /* Light grey page background */
+    --text-dark: #212529;           /* Very dark text (headings) */
+    --text-medium: #495057;         /* Medium dark text (body) */
+    --text-light: #6c757d;          /* Lighter grey text (period, description) */
+    --border-color: #dee2e6;          /* Light border color */
+    --badge-bg: #e9ecef;            /* Light grey badge background */
+    --badge-text: #495057;          /* Darker grey badge text */
+    --icon-color: var(--primary-button-bg); /* Icon color matches button */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text-medium); /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 650px; /* Slightly increased max-width */
+    text-align: center;
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 2.2em; /* Adjusted size */
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.pricing-card {
+    background-color: var(--card-bg);
+    color: var(--text-medium);
+    border-radius: 12px; /* Adjusted rounding */
+    padding: 30px;       /* Adjusted padding */
+    text-align: left;
+    margin-top: 20px;
+    border: 1px solid var(--border-color); /* Add a light border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07); /* Added a subtle box shadow */
+}
+
+.plan-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.plan-header h2 {
+    font-size: 1.6em; /* Adjusted size */
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.75em;
+    font-weight: 600; /* Made slightly bolder */
+    margin-left: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.plan-price {
+    margin-bottom: 15px;
+}
+
+.plan-price .amount {
+    font-size: 2.8em; /* Adjusted size */
+    font-weight: 700; /* Kept bold */
+    color: var(--text-dark);
+    margin-right: 5px;
+}
+
+.plan-price .period {
+    font-size: 1em;
+    color: var(--text-light); /* Lighter text for period */
+}
+
+.plan-description {
+    font-size: 1em;
+    color: var(--text-light); /* Lighter text for description */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: var(--primary-button-bg); /* Dark Button */
+    color: var(--primary-button-text); /* White text */
+    border: none;
+    border-radius: 6px; /* Match button style from image_0c9801 */
+    padding: 12px 20px; /* Adjusted padding */
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-button-hover-bg); /* Darker hover */
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: var(--text-medium); /* Standard text color */
+    line-height: 1.5;
+}
+
+.features-list li:last-child {
+    margin-bottom: 0;
+}
+
+.features-list .feature-icon {
+    color: var(--icon-color); /* Use the defined icon color (dark grey) */
+    font-size: 1.1em; /* Adjusted icon size */
+    margin-right: 12px;
+    margin-top: 3px; /* Align icon */
+    flex-shrink: 0;
+}
+
+.features-list li span strong {
+    font-weight: 500;
+    color: var(--text-dark); /* Darker text for strong elements */
+}

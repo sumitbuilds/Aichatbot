@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional: Background color for the page */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Adjust as needed */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    font-size: 1em; /* Adjust as needed */
+    max-width: 600px; /* Limit the width of the text */
+    line-height: 1.6;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 15px; /* Space between the grid items */
+    max-width: 920px; /* Adjust as needed for 3 columns */
+    margin-top: 30px;
+    padding: 0 20px; /* Optional: Add some padding on the sides for smaller screens */
+}
+
+.option-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Space out text and arrow */
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-box:hover {
+    background-color: #eee;
+}
+
+.option-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.arrow-icon {
+    color: #777;
+}
+
+.button-container {
+    margin-top: 30px; /* Add some space between the options and the button */
+}
+
+.center-button {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 15px 30px; /* Adjust padding as needed */
+    border: none; /* Remove default button border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Adjust font size as needed */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+.center-button:hover {
+    background-color: #555; /* Slightly darker background on hover */
+}
